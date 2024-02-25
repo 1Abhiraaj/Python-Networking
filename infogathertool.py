@@ -42,32 +42,4 @@ except KeyError:
     print("Key not found in JSON response from ipinfo.io.")
 except Exception as e:
     print("An error occurred:", e)
-
-
-
-
-'''import sys
-import requests
-import socket
-import json
-
-if len(sys.argv) < 2:
-    print("Usage: " + sys.argv[0] + " <url>")
-    sys.exit(1)
-
-req = requests.get("https://" + sys.argv[1])
-print("\n" + str(req.headers))
-
-gethostby_ = socket.gethostbyname(sys.argv[1])
-print("\n The ip address of " + sys.argv[1] + " is " + gethostby_ + "\n")
-
-#ipinfo.in
-
-req_tow = requests.get("https://ipinfo.io/" + gethostby_ + "/json")
-resp_ = json.loads(req_tow.text)
-
-print("Location: " + resp_["loc"])
-print("Region: " + resp_["region"])
-print("City: " + resp_["city"])
-print("Country: " + resp_["country"])'''
-
+    
